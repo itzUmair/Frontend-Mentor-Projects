@@ -1,0 +1,222 @@
+:root {
+    --clr-primary-500: hsl(25, 97%, 53%);
+    --clr-accent-100: hsl(0, 0%, 100%);
+    --clr-accent-300: hsl(217, 12%, 63%);
+    --clr-accent-400: hsla(216, 12%, 54%, 0.18);
+    --clr-secondary-800: hsl(213, 19%, 18%);
+    --clr-secondary-900: hsl(216, 12%, 8%);
+    --ff-primary: 'Overpass', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: var(--ff-primary);
+}
+
+.fs-heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.fs-paragraph {
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.fc-100 {
+    color: var(--clr-accent-100);
+}
+
+.opacity {
+    opacity: 50%;
+}
+
+.uniform-dist-btm {
+    margin-bottom: 1rem;
+}
+
+body {
+    background-color: var(--clr-secondary-900);
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+#front {
+    backface-visibility: hidden;
+}
+
+#back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+    user-select: none;
+}
+
+.card {
+    position: absolute;
+    min-width: 15rem;
+    max-width: 25rem;
+    height: fit-content;
+    margin: 0 5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-secondary-800);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-accent-400);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.rating-opt {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: none;
+    outline: none;
+}
+
+.rating-btn {
+    background-color: var(--clr-accent-400);
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+}
+
+.rating-btn:hover,
+.rating-btn:focus {
+    background-color: var(--clr-accent-300);
+}
+
+.rating-btn.active {
+    background-color: var(--clr-primary-500);
+    opacity: 1;
+}
+
+.submit {
+    background-color: var(--clr-primary-500);
+    width: 100%;
+    padding: 0.8rem;
+    color: var(--clr-accent-100);
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    box-shadow: 0 1.5rem 2rem -1rem var(--clr-secondary-900);
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 40%;
+}
+.activeBtn {
+    background-color: var(--clr-primary-500);
+    width: 100%;
+    padding: 0.8rem;
+    color: var(--clr-accent-100);
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 1.5rem 2rem -1rem var(--clr-secondary-900);
+    cursor: pointer;
+    opacity: 100%;
+    pointer-events: auto;
+}
+.submit:hover {
+    background-color: var(--clr-accent-100);
+    color: var(--clr-primary-500);
+}
+
+.thankyou-msg {
+    text-align: center;
+}
+
+.thankyou-msg > p {
+    margin-left: -1%;
+}
+
+.thankyou-msg > h2 {
+    margin-top: 1rem;
+}
+
+.rating-info > p{
+    color: var(--clr-primary-500);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.rating-info > p::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 150%;
+    transform: translate(-8%, -18%);
+    background-color: var(--clr-accent-400);
+    opacity: 90%;
+    border-radius: 1rem;
+}
+
+@keyframes rotateY {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+@keyframes rotateY2 {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes reject {
+    20% {
+        transform: translateX(-0.5rem);
+    }
+    40% {
+        transform: translateX(0.5rem);
+    }
+    60% {
+        transform: translateX(-0.5rem);
+    }
+    80% {
+        transform: translateX(+0.5rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 18rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .rating-btn {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .rating-opt {
+        gap: 0.5rem;
+    }
+}

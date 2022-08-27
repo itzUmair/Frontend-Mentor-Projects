@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive card info</title>
+</head>
+<body>
+    <main>
+        <section class="dark-section">
+            <div class="card-container">
+                <div class="card front">
+                    <div class="circle-solid"></div>
+                    <div class="card-number"><p id="card-number">0000 0000 0000 0000</p></div>
+                    <section>    
+                        <div id="holder-name">jane appleseed</div>
+                        <div id="exp-date"><p><span id="month">00</span>/<span id="year">00</span></p></div>
+                    </section>
+                </div>
+                <div class="card back">
+                    <div class="cvc-display"> <p id="cvcDisplay">000</p> </div>
+                </div>
+            </div>
+        </section>
+        <section class="light-section">
+            <div id="form-container">
+                <form action="#" class="form" id="form">
+                    <label class="form-label" for="name">cardholder name</label>
+                    <input class="form-input" type="text" id="name" name="name"  placeholder="e.g. Jane Appleseed" maxlength="40">
+                    <label for="error-number" class="error-name">can't be blank</label>
+                    <label class="form-label" for="card-number">card number</label>
+                    <input class="form-input" type="text" id="cn" name="card-number"  placeholder="e.g. 1234 5678 9123 0000 (No spaces)" maxlength="16">
+                    <label for="error-number" class="error-card">can't be blank</label>
+                    <label for="error-number" class="error-cn">Wrong format, numbers only</label>
+                    <span class="bottom-inputs">
+                        <span class="dm">
+                            <label class="form-label" for="date month">exp. date (mm/yy)</label>
+                            <span class="dm-inputs">
+                                <input class="form-input" type="text" name="month" id="exp-month"  placeholder="MM" maxlength="2">
+                                <input class="form-input" type="text" name="year" id="exp-year"  placeholder="YY" maxlength="2">
+                            </span>
+                            <label for="error" class="error-dm">Can't be blank</label>
+                            <label for="error" class="error-dm-format">Must be numeric</label>
+                            <label for="error" class="error-dm-format-invalid">Must be a valid month</label>
+                            
+                        </span>
+                        <span class="cvc">
+                            <label class="form-label" for="cvc">cvc</label>
+                            <input class="form-input" type="text" name="cvc" id="cvc"  placeholder="e.g. 123" maxlength="3" >
+                            <label for="error" class="error-cvc">Can't be blank</label>
+                            <label for="error" class="error-dm-format">Must be numeric</label>
+                        </span>
+                        
+                    </span>
+                    <button class="submit-btn btn" type="submit" >Confirm</button>
+                </form>
+            </div>
+            <div id="thankyou">
+                <img src="media/icon-complete.svg" alt="">
+                <h1>thank you!</h1>
+                <p>We've added your card details</p>
+                <button class="btn" onclick="rotateY360()">continue</button>
+            </div>
+        </section>
+    </main>
+    <script src="functions.js"></script>
+</body>
+</html>
