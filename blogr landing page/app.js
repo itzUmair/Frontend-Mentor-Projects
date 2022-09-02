@@ -63,9 +63,11 @@ mobileMenu[0].addEventListener("click", () => {
     if(display === "false") {
         mobileNav[0].classList.add("active");
         mobileMenu[0].setAttribute("data-display", true);
+        document.body.style.overflowY = "hidden";
     }
     else {
         mobileNav[0].classList.remove("active");
         mobileMenu[0].setAttribute("data-display", false);
+        document.body.style.overflowY = "auto"
     }
 })
