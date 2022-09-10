@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sunny Side</title>
+</head>
+<body>
+    <header class="primary-header">
+        <nav class="primary-nav">
+            <div class="site-logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <button class="mobile-nav-toggle" data-state="close"></button>
+        <div class="hero-header">
+            <h1>
+                we are creatives
+            </h1>
+        </div>
+        <div class="arrow-container">
+            <button onclick="scrollVH()"><img src="images/icon-arrow-down.svg" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <section class="qualities-section">
+            <div class="main-container main-container1">
+                <div class="sub-container text-container">
+                    <h3>Transform your brand</h3>
+                    <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <button class="learn-more-btn" style="--underline-clr:hsl(51, 100%, 49%);">learn more</button>
+                </div>
+                <div class="sub-container image-container">
+                    <img src="images/desktop/image-transform.jpg" alt="">
+                </div>
+            </div>
+            <div class="main-container main-container2">
+                <div class="sub-container text-container">
+                    <h3>Stand out to the right audience</h3>
+                    <p>Using a collaborative formula of designs, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+                    <button class="learn-more-btn" style="--underline-clr: hsl(7, 99%, 70%);">learn more</button>
+                </div>
+                <div class="sub-container image-container">
+                    <img src="images/desktop/image-stand-out.jpg" alt="">
+                </div>
+            </div>
+            <div class="main-container main-container3">
+                <div class="sub-container image-container-bg" style="--img-url: url(images/desktop/image-graphic-design.jpg);">
+                    <h3>Graphic Design</h3>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and caotures potential clients' attention.</p>
+                </div>
+                <div class="sub-container image-container-bg" style="--img-url: url(images/desktop/image-photography.jpg);">
+                    <h3>Photography</h3>
+                    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <h4>client testimonials</h4>
+            <div class="testimonials">
+                <div class="testimonial"> 
+                    <span class="client-image"><img src="images/image-emily.jpg" alt=""></span>
+                    <span class="client-message">
+                        <p>
+                            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                        </p>
+                    </span>
+                    <span class="client-name">
+                        <h6>Emily R.</h6>
+                        <p>Marketing Director</p>
+                    </span>
+                </div>
+                <div class="testimonial"> 
+                    <span class="client-image"><img src="images/image-thomas.jpg" alt=""></span>
+                    <span class="client-message">
+                        <p>
+                            Sunnyside's enthusiasm coupled with their keen interest on out brand's success made it a satisfying and enjoyable experience.
+                        </p>
+                    </span>
+                    <span class="client-name">
+                        <h6>Thomas S.</h6>
+                        <p>Cheif Operating Officer</p>
+                    </span>
+                </div>
+                <div class="testimonial"> 
+                    <span class="client-image"><img src="images/image-jennie.jpg" alt=""></span>
+                    <span class="client-message">
+                        <p>
+                            Incredible end results! Out sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                        </p>
+                    </span>
+                    <span class="client-name">
+                        <h6>Jennie F.</h6>
+                        <p>Business Owner</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="image-gallery">
+            <div>
+                <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+                <img src="images/desktop/image-gallery-orange.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/desktop/image-gallery-cone.jpg" alt="">
+                <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="primary-footer">
+        <nav class="secondary-nav">
+            <div class="site-logo">
+                <img src="images/logo.svg" alt="" class="green-logo">
+            </div>  
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">about</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">projects</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+                <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+                <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+            </div>
+        </nav>
+        <p class="dev-creds">
+            developed by <a href="#">Umair</a>
+        </p>
+    </footer>
+</body>
+</html>
