@@ -8,9 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>intro section with dropdown navigation - Frontend Mentor</title>
+    <script src="script.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
-    
+    <header class="primary-header">
+        <div class="site-logo">
+            <img src="assets/logo.svg" alt="">
+        </div>
+        <nav class="primary-nav">
+            <ul class="nav-menu">
+                <li><a href="#" id="features">features <span><img src="assets/icon-arrow-down.svg" alt="" class="dropdown-arrow"></span> </a>
+                    <div class="dropdown-container dropdown-container1">
+                        <div class="icons">
+                            <a href="#"><img src="assets/icon-todo.svg" alt=""></a>
+                            <a href="#"><img src="assets/icon-calendar.svg" alt=""></a>
+                            <a href="#"><img src="assets/icon-reminders.svg" alt=""></a>
+                            <a href="#"><img src="assets/icon-planning.svg" alt=""></a>
+                        </div>
+                        <div >
+                            <ul class="dropdown-menu">
+                                <li><a href="#">todo list</a></li>
+                                <li><a href="#">calender</a></li>
+                                <li><a href="#">reminder</a></li>
+                                <li><a href="#">planning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" id="company">company <span><img src="assets/icon-arrow-down.svg" alt="" class="dropdown-arrow"></span></a>
+                <div class="dropdown-container dropdown-container2">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">history</a></li>
+                        <li><a href="#">our team</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">register</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-nav-toggle" onclick="mobileNavToggle()"></button>
+    </header>
+    <main>
+        <section class="left-section">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button>Learn more</button>
+            <section class="client-logos">
+                <a href="#"><img src="assets/client-databiz.svg" alt=""></a>
+                <a href="#"><img src="assets/client-audiophile.svg" alt=""></a>
+                <a href="#"><img src="assets/client-meet.svg" alt=""></a>
+                <a href="#"><img src="assets/client-maker.svg" alt=""></a>
+            </section>
+        </section>  
+        <section class="right-section"></section>
+    </main>
 </body>
 </html>
