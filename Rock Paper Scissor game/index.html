@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="header">
+        <section>
+            <h1>rock <br> paper <br> scissors</h1>
+        </section>
+        <section class="score-display">
+            <p>score</p>
+            <h1 id="score">
+                0
+            </h1>
+        </section>
+    </div>
+    <div class="main-container">
+        <div class="option-container">
+            <div id="paper" class="choice active" style="--bg-color: 230 89% 65%; --shadow: 230 89% 45%;"><img src="images/icon-paper.svg" alt=""></div>
+            <div id="scissors" class="choice active" style="--bg-color: 39 89% 49%; --shadow: 39 89% 35%;"><img src="images/icon-scissors.svg" alt=""></div>
+            <div id="rock" class="choice active" style="--bg-color: 349 71% 52%; --shadow: 349 71% 35%;"><img src="images/icon-rock.svg" alt=""></div>
+        </div>
+        <div class="result-container">
+            <div class="selected" id="user-choice" data-title="you picked"></div>
+            <div class="result-display">
+                <h1 id="result">you win</h1>
+                <button id="play-again">play again</button>
+            </div>
+            <div class="selected" id="ai-choice" data-title="the house picked"></div>
+        </div>
+    </div>
+    <div class="choice-disable"></div>
+    <div class="rules-popup">
+        <section class="rules-header">
+            <h1>rules</h1>
+            <button tabindex="-1"> <img src="images/icon-close.svg" alt="" id="close"> </button>
+        </section>
+        <section class="rules">
+            <img src="images/image-rules.svg" alt="">
+        </section>
+    </div>
+    <button id="rules" class="btn">rules</button>
+    <button id="clear-score" class="btn">clear</button>
+    <p class="dev-creds">
+        developed by <a href="#">Umair</a>
+    </p>
+</body>
+</html>
