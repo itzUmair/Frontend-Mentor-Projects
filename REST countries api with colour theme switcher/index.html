@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>REST countries API</title>
+</head>
+<body">
+    <header class="pageHeader">
+        <h1>Where in the world?</h1>
+        <button class="themeSwitcher"></button>
+    </header>
+    <main>
+        <header class="mainHeader">
+            <div class="searchBar">
+                <input type="search" name="search" class="search" placeholder="Search for a country...">
+                <img src="assets/search-outline.svg" alt="" class="icon enter">
+                <div class="searchErrorDisplay">
+                    <p>no result found</p>
+                </div>
+            </div>
+            <div class="region">
+                <p class="regionTag">Filter by Region</p>
+                <img src="assets/chevron-down-outline.svg" alt="" class="icon">
+                <div class="dropdownContainer">
+                    <ul class="dropdownMenu">
+                        <li class="regionOpt" data-value="Africa">Africa</li>
+                        <li class="regionOpt" data-value="Americas">America</li>
+                        <li class="regionOpt" data-value="Asia">Asia</li>
+                        <li class="regionOpt" data-value="Europe">Europe</li>
+                        <li class="regionOpt" data-value="Oceania">Oceania</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <button class="removeFilter" onclick="removeFilter()"><span class="filterDisplay"></span><img src="assets/close-outline.svg" alt=""></button>
+        <section class="cardContainer">
+            <!-- generated via script.js -->
+        </section>
+        <section class="countryDetails">
+            <!-- generated via script.js -->
+        </section>
+    </main>
+    <!-- Developed by Umair -->
+</body>
+</html>
