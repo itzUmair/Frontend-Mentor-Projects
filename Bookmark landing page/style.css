@@ -583,11 +583,41 @@ footer span {
     }
 
     .navMenu {
+        position: relative;
+        background-color: transparent;
+        transform: translateY(0);
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: 2rem;
+        height: auto;
+        gap: 1rem;
+        padding-block-start: 0;
+        padding-inline: 0;
     }
+
+    
+    .navMenu li {
+        width: auto;
+        text-align: left;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .navMenu li:nth-child(4) {
+        margin-top: 0;
+        border-bottom: 0;
+    }
+    .navMenu li:nth-child(1) {
+        border-top: 0;
+    }
+
+    .navMenu li:nth-child(4) a {
+        border: 0;
+        border-radius: 0;
+        margin-top: 0;
+        padding-inline: 0;
+    }
+
     
     .navMenu > li:last-child a{
         background-color: var(--heighlight-clr);
